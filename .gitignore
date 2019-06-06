@@ -1,2 +1,7 @@
 node_modules
 .DS_STORE
+.firebase/
+.firebaserc
+firestore.indexes.json
+firestore.rules
+firebase.json

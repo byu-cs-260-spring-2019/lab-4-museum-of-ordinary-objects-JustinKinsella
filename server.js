@@ -1,7 +1,11 @@
+
+
 const express = require('express');
 const bodyParser = require("body-parser");
+const functions = require('firebase-functions');
+const firebase = require('firebase-admin');
 
-const app = express();
+const firebaseApp = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: false
