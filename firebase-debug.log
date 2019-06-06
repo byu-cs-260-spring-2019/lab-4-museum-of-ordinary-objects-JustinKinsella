@@ -1,0 +1,60 @@
+[debug] [2019-06-06T17:34:24.901Z] ----------------------------------------------------------------------
+[debug] [2019-06-06T17:34:24.908Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-06T17:34:24.908Z] CLI Version:   6.8.0
+[debug] [2019-06-06T17:34:24.908Z] Platform:      linux
+[debug] [2019-06-06T17:34:24.908Z] Node Version:  v8.10.0
+[debug] [2019-06-06T17:34:24.909Z] Time:          Thu Jun 06 2019 11:34:24 GMT-0600 (MDT)
+[debug] [2019-06-06T17:34:24.909Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-06T17:34:24.934Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-06T17:34:24.934Z] > authorizing via signed-in user
+[debug] [2019-06-06T17:34:24.935Z] [iam] checking project cs260-justink for permissions ["firebase.projects.get"]
+[debug] [2019-06-06T17:34:24.939Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-06-06T17:34:24.940Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-06-06T17:34:25.233Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T17:34:25.261Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink:testIamPermissions  
+
+[debug] [2019-06-06T17:34:25.726Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T17:34:25.729Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink  
+ 
+[debug] [2019-06-06T17:34:26.057Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/justin/Desktop/CS260/Labs/lab4'...
+[info] 
+[warn] ⚠  functions: Cannot start emulator. Error: EACCES: permission denied, open '/home/justin/.config/configstore/@google-cloud/functions-emulator/config.json'
+You don't have access to this file.
+
+[debug] [2019-06-06T17:34:26.800Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/279101613576/clients/_:getWebAppConfig  
+ 
+[debug] [2019-06-06T17:34:27.679Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-06-06T17:43:38.772Z] ----------------------------------------------------------------------
+[debug] [2019-06-06T17:43:38.776Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-06T17:43:38.777Z] CLI Version:   6.8.0
+[debug] [2019-06-06T17:43:38.777Z] Platform:      linux
+[debug] [2019-06-06T17:43:38.777Z] Node Version:  v8.10.0
+[debug] [2019-06-06T17:43:38.777Z] Time:          Thu Jun 06 2019 11:43:38 GMT-0600 (MDT)
+[debug] [2019-06-06T17:43:38.777Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-06T17:43:38.793Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-06T17:43:38.793Z] > authorizing via signed-in user
+[debug] [2019-06-06T17:43:38.794Z] [iam] checking project cs260-justink for permissions ["firebase.projects.get"]
+[debug] [2019-06-06T17:43:38.797Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink:testIamPermissions  
+
+[debug] [2019-06-06T17:43:39.226Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T17:43:39.236Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink  
+ 
+[debug] [2019-06-06T17:43:39.578Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/justin/Desktop/CS260/Labs/lab4'...
+[info] 
+[warn] ⚠  functions: Cannot start emulator. Error: EACCES: permission denied, open '/home/justin/.config/configstore/@google-cloud/functions-emulator/config.json'
+You don't have access to this file.
+
+[debug] [2019-06-06T17:43:39.629Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/279101613576/clients/_:getWebAppConfig  
+ 
+[debug] [2019-06-06T17:43:40.179Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
