@@ -5,14 +5,14 @@ var app = new Vue({
     selected:  "",
     addItem: null,
     photos: [
-      {name: 'baseball', id: 1, path: 'baseball.jpg'},
-      {name: 'car', id: 2, path: 'car.jpg'},
-      {name: 'glasses', id: 3, path: 'glasses.jpg'},
-      {name: 'brush', id: 4, path: 'brush.jpg'},
-      {name: 'pen', id: 5, path: 'pen.jpg'},
-      {name: 'scissors', id: 6, path: 'scissors.jpg'},
-      {name: 'shovel', id: 7, path: 'shovel.jpg'},
-      {name: 'slinky', id: 8, path: 'slinky.jpg'},
+      {name: 'baseball', id: 1, path: './images/baseball.jpg'},
+      {name: 'car', id: 2, path: './images/car.jpg'},
+      {name: 'glasses', id: 3, path: './images/glasses.jpg'},
+      {name: 'brush', id: 4, path: './images/brush.jpg'},
+      {name: 'pen', id: 5, path: './images/pen.jpg'},
+      {name: 'scissors', id: 6, path: './images/scissors.jpg'},
+      {name: 'shovel', id: 7, path: './images/shovel.jpg'},
+      {name: 'slinky', id: 8, path: './images/slinky.jpg'},
     ],
     items: [],
     findTitle: "",
@@ -48,7 +48,7 @@ var app = new Vue({
 
     async deleteItem(item) {
       try {
-        let response = await axios.get("api/items/" + item.id);
+        let response = await axios.get("/api/items/" + item.id);
         this.findItem = null;
         this.getItems();
         return true;

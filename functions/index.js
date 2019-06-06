@@ -22,6 +22,7 @@ app.post('/api/items', async (req, res) => {
             title: req.body.title,
             path: req.body.path
         };
+        console.log("idem: ", item);
         itemsRef.doc(item.id.toString()).set(item);
         res.send(item);
       } catch (error) {
@@ -29,8 +30,6 @@ app.post('/api/items', async (req, res) => {
         res.sendStatus(500);
       }
 });
-
-//get a list of all the items in the museum.
 app.get('api/items', async (req, res) => {
     try {
         let querySnapshot = await itemsRef.get();
@@ -41,11 +40,3 @@ app.get('api/items', async (req, res) => {
 });
 
 exports.app = functions.https.onRequest(app);
-
-
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//  response.send("Hello from Firebase!");
-// });

@@ -1,149 +1,33 @@
-[debug] [2019-06-06T17:34:24.901Z] ----------------------------------------------------------------------
-[debug] [2019-06-06T17:34:24.908Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
-[debug] [2019-06-06T17:34:24.908Z] CLI Version:   6.8.0
-[debug] [2019-06-06T17:34:24.908Z] Platform:      linux
-[debug] [2019-06-06T17:34:24.908Z] Node Version:  v8.10.0
-[debug] [2019-06-06T17:34:24.909Z] Time:          Thu Jun 06 2019 11:34:24 GMT-0600 (MDT)
-[debug] [2019-06-06T17:34:24.909Z] ----------------------------------------------------------------------
+[debug] [2019-06-06T19:12:44.998Z] ----------------------------------------------------------------------
+[debug] [2019-06-06T19:12:45.004Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-06T19:12:45.004Z] CLI Version:   6.8.0
+[debug] [2019-06-06T19:12:45.004Z] Platform:      linux
+[debug] [2019-06-06T19:12:45.004Z] Node Version:  v8.10.0
+[debug] [2019-06-06T19:12:45.005Z] Time:          Thu Jun 06 2019 13:12:45 GMT-0600 (MDT)
+[debug] [2019-06-06T19:12:45.005Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-06-06T17:34:24.934Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-06-06T17:34:24.934Z] > authorizing via signed-in user
-[debug] [2019-06-06T17:34:24.935Z] [iam] checking project cs260-justink for permissions ["firebase.projects.get"]
-[debug] [2019-06-06T17:34:24.939Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2019-06-06T17:34:24.940Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2019-06-06T19:12:45.024Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-06T19:12:45.024Z] > authorizing via signed-in user
+[debug] [2019-06-06T19:12:45.025Z] [iam] checking project cs260-justink for permissions ["firebase.projects.get"]
+[debug] [2019-06-06T19:12:45.029Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-06-06T19:12:45.041Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2019-06-06T17:34:25.233Z] <<< HTTP RESPONSE 200
-[debug] [2019-06-06T17:34:25.261Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink:testIamPermissions  
+[debug] [2019-06-06T19:12:45.294Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T19:12:45.305Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink:testIamPermissions  
 
-[debug] [2019-06-06T17:34:25.726Z] <<< HTTP RESPONSE 200
-[debug] [2019-06-06T17:34:25.729Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink  
+[debug] [2019-06-06T19:12:45.636Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T19:12:45.642Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink  
  
-[debug] [2019-06-06T17:34:26.057Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T19:12:45.966Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/home/justin/Desktop/CS260/Labs/lab4'...
 [info] 
 [warn] ⚠  functions: Cannot start emulator. Error: EACCES: permission denied, open '/home/justin/.config/configstore/@google-cloud/functions-emulator/config.json'
 You don't have access to this file.
 
-[debug] [2019-06-06T17:34:26.800Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/279101613576/clients/_:getWebAppConfig  
+[debug] [2019-06-06T19:12:45.993Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/279101613576/clients/_:getWebAppConfig  
  
-[debug] [2019-06-06T17:34:27.679Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] ✔  hosting: Local server: http://localhost:5000
-[debug] [2019-06-06T17:43:38.772Z] ----------------------------------------------------------------------
-[debug] [2019-06-06T17:43:38.776Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
-[debug] [2019-06-06T17:43:38.777Z] CLI Version:   6.8.0
-[debug] [2019-06-06T17:43:38.777Z] Platform:      linux
-[debug] [2019-06-06T17:43:38.777Z] Node Version:  v8.10.0
-[debug] [2019-06-06T17:43:38.777Z] Time:          Thu Jun 06 2019 11:43:38 GMT-0600 (MDT)
-[debug] [2019-06-06T17:43:38.777Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2019-06-06T17:43:38.793Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-06-06T17:43:38.793Z] > authorizing via signed-in user
-[debug] [2019-06-06T17:43:38.794Z] [iam] checking project cs260-justink for permissions ["firebase.projects.get"]
-[debug] [2019-06-06T17:43:38.797Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink:testIamPermissions  
-
-[debug] [2019-06-06T17:43:39.226Z] <<< HTTP RESPONSE 200
-[debug] [2019-06-06T17:43:39.236Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink  
- 
-[debug] [2019-06-06T17:43:39.578Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from '/home/justin/Desktop/CS260/Labs/lab4'...
-[info] 
-[warn] ⚠  functions: Cannot start emulator. Error: EACCES: permission denied, open '/home/justin/.config/configstore/@google-cloud/functions-emulator/config.json'
-You don't have access to this file.
-
-[debug] [2019-06-06T17:43:39.629Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/279101613576/clients/_:getWebAppConfig  
- 
-[debug] [2019-06-06T17:43:40.179Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] ✔  hosting: Local server: http://localhost:5000
-[debug] [2019-06-06T18:27:26.792Z] ----------------------------------------------------------------------
-[debug] [2019-06-06T18:27:26.796Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
-[debug] [2019-06-06T18:27:26.797Z] CLI Version:   6.8.0
-[debug] [2019-06-06T18:27:26.797Z] Platform:      linux
-[debug] [2019-06-06T18:27:26.797Z] Node Version:  v8.10.0
-[debug] [2019-06-06T18:27:26.797Z] Time:          Thu Jun 06 2019 12:27:26 GMT-0600 (MDT)
-[debug] [2019-06-06T18:27:26.797Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2019-06-06T18:27:26.812Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-06-06T18:27:26.813Z] > authorizing via signed-in user
-[debug] [2019-06-06T18:27:26.813Z] [iam] checking project cs260-justink for permissions ["firebase.projects.get"]
-[debug] [2019-06-06T18:27:26.817Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2019-06-06T18:27:26.817Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2019-06-06T18:27:27.065Z] <<< HTTP RESPONSE 200
-[debug] [2019-06-06T18:27:27.076Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink:testIamPermissions  
-
-[debug] [2019-06-06T18:27:27.410Z] <<< HTTP RESPONSE 200
-[debug] [2019-06-06T18:27:27.416Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink  
- 
-[debug] [2019-06-06T18:27:27.756Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from '/home/justin/Desktop/CS260/Labs/lab4'...
-[info] 
-[warn] ⚠  functions: Cannot start emulator. Error: EACCES: permission denied, open '/home/justin/.config/configstore/@google-cloud/functions-emulator/config.json'
-You don't have access to this file.
-
-[debug] [2019-06-06T18:27:27.774Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/279101613576/clients/_:getWebAppConfig  
- 
-[debug] [2019-06-06T18:27:28.139Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] ✔  hosting: Local server: http://localhost:5000
-[debug] [2019-06-06T18:34:15.521Z] ----------------------------------------------------------------------
-[debug] [2019-06-06T18:34:15.526Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
-[debug] [2019-06-06T18:34:15.526Z] CLI Version:   6.8.0
-[debug] [2019-06-06T18:34:15.526Z] Platform:      linux
-[debug] [2019-06-06T18:34:15.526Z] Node Version:  v8.10.0
-[debug] [2019-06-06T18:34:15.527Z] Time:          Thu Jun 06 2019 12:34:15 GMT-0600 (MDT)
-[debug] [2019-06-06T18:34:15.527Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2019-06-06T18:34:15.542Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-06-06T18:34:15.542Z] > authorizing via signed-in user
-[debug] [2019-06-06T18:34:15.543Z] [iam] checking project cs260-justink for permissions ["firebase.projects.get"]
-[debug] [2019-06-06T18:34:15.546Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink:testIamPermissions  
-
-[debug] [2019-06-06T18:34:16.311Z] <<< HTTP RESPONSE 200
-[debug] [2019-06-06T18:34:16.315Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink  
- 
-[debug] [2019-06-06T18:34:16.639Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from '/home/justin/Desktop/CS260/Labs/lab4'...
-[info] 
-[warn] ⚠  functions: Cannot start emulator. Error: EACCES: permission denied, open '/home/justin/.config/configstore/@google-cloud/functions-emulator/config.json'
-You don't have access to this file.
-
-[debug] [2019-06-06T18:34:16.656Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/279101613576/clients/_:getWebAppConfig  
- 
-[debug] [2019-06-06T18:34:17.072Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] ✔  hosting: Local server: http://localhost:5000
-[debug] [2019-06-06T18:52:29.551Z] ----------------------------------------------------------------------
-[debug] [2019-06-06T18:52:29.556Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
-[debug] [2019-06-06T18:52:29.557Z] CLI Version:   6.8.0
-[debug] [2019-06-06T18:52:29.557Z] Platform:      linux
-[debug] [2019-06-06T18:52:29.557Z] Node Version:  v8.10.0
-[debug] [2019-06-06T18:52:29.557Z] Time:          Thu Jun 06 2019 12:52:29 GMT-0600 (MDT)
-[debug] [2019-06-06T18:52:29.557Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2019-06-06T18:52:29.573Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-06-06T18:52:29.573Z] > authorizing via signed-in user
-[debug] [2019-06-06T18:52:29.573Z] [iam] checking project cs260-justink for permissions ["firebase.projects.get"]
-[debug] [2019-06-06T18:52:29.577Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink:testIamPermissions  
-
-[debug] [2019-06-06T18:52:29.981Z] <<< HTTP RESPONSE 200
-[debug] [2019-06-06T18:52:29.992Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink  
- 
-[debug] [2019-06-06T18:52:30.345Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from '/home/justin/Desktop/CS260/Labs/lab4'...
-[info] 
-[warn] ⚠  functions: Cannot start emulator. Error: EACCES: permission denied, open '/home/justin/.config/configstore/@google-cloud/functions-emulator/config.json'
-You don't have access to this file.
-
-[debug] [2019-06-06T18:52:30.373Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/279101613576/clients/_:getWebAppConfig  
- 
-[debug] [2019-06-06T18:52:30.742Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T19:12:46.478Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
 [info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
@@ -151,32 +35,269 @@ You don't have access to this file.
 [info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
 [info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
 [info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
-[debug] [2019-06-06T18:56:48.356Z] ----------------------------------------------------------------------
-[debug] [2019-06-06T18:56:48.361Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
-[debug] [2019-06-06T18:56:48.362Z] CLI Version:   6.8.0
-[debug] [2019-06-06T18:56:48.362Z] Platform:      linux
-[debug] [2019-06-06T18:56:48.362Z] Node Version:  v8.10.0
-[debug] [2019-06-06T18:56:48.362Z] Time:          Thu Jun 06 2019 12:56:48 GMT-0600 (MDT)
-[debug] [2019-06-06T18:56:48.363Z] ----------------------------------------------------------------------
+[debug] [2019-06-06T19:16:15.175Z] ----------------------------------------------------------------------
+[debug] [2019-06-06T19:16:15.180Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-06T19:16:15.181Z] CLI Version:   6.8.0
+[debug] [2019-06-06T19:16:15.181Z] Platform:      linux
+[debug] [2019-06-06T19:16:15.181Z] Node Version:  v8.10.0
+[debug] [2019-06-06T19:16:15.181Z] Time:          Thu Jun 06 2019 13:16:15 GMT-0600 (MDT)
+[debug] [2019-06-06T19:16:15.181Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-06-06T18:56:48.378Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-06-06T18:56:48.378Z] > authorizing via signed-in user
-[debug] [2019-06-06T18:56:48.379Z] [iam] checking project cs260-justink for permissions ["firebase.projects.get"]
-[debug] [2019-06-06T18:56:48.382Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink:testIamPermissions  
+[debug] [2019-06-06T19:16:15.200Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-06T19:16:15.201Z] > authorizing via signed-in user
+[debug] [2019-06-06T19:16:15.202Z] [iam] checking project cs260-justink for permissions ["firebase.projects.get"]
+[debug] [2019-06-06T19:16:15.206Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink:testIamPermissions  
 
-[debug] [2019-06-06T18:56:48.785Z] <<< HTTP RESPONSE 200
-[debug] [2019-06-06T18:56:48.796Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink  
+[debug] [2019-06-06T19:16:15.607Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T19:16:15.621Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink  
  
-[debug] [2019-06-06T18:56:49.155Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T19:16:15.957Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/home/justin/Desktop/CS260/Labs/lab4'...
 [info] 
 [warn] ⚠  functions: Cannot start emulator. Error: EACCES: permission denied, open '/home/justin/.config/configstore/@google-cloud/functions-emulator/config.json'
 You don't have access to this file.
 
-[debug] [2019-06-06T18:56:49.183Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/279101613576/clients/_:getWebAppConfig  
+[debug] [2019-06-06T19:16:15.972Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/279101613576/clients/_:getWebAppConfig  
  
-[debug] [2019-06-06T18:56:49.713Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T19:16:16.321Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[debug] [2019-06-06T19:17:38.634Z] ----------------------------------------------------------------------
+[debug] [2019-06-06T19:17:38.639Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-06T19:17:38.639Z] CLI Version:   6.8.0
+[debug] [2019-06-06T19:17:38.639Z] Platform:      linux
+[debug] [2019-06-06T19:17:38.639Z] Node Version:  v8.10.0
+[debug] [2019-06-06T19:17:38.640Z] Time:          Thu Jun 06 2019 13:17:38 GMT-0600 (MDT)
+[debug] [2019-06-06T19:17:38.640Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-06T19:17:38.655Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-06T19:17:38.655Z] > authorizing via signed-in user
+[debug] [2019-06-06T19:17:38.655Z] [iam] checking project cs260-justink for permissions ["firebase.projects.get"]
+[debug] [2019-06-06T19:17:38.659Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink:testIamPermissions  
+
+[debug] [2019-06-06T19:17:39.075Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T19:17:39.080Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink  
+ 
+[debug] [2019-06-06T19:17:39.414Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/justin/Desktop/CS260/Labs/lab4'...
+[info] 
+[warn] ⚠  functions: Cannot start emulator. Error: EACCES: permission denied, open '/home/justin/.config/configstore/@google-cloud/functions-emulator/config.json'
+You don't have access to this file.
+
+[debug] [2019-06-06T19:17:39.448Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/279101613576/clients/_:getWebAppConfig  
+ 
+[debug] [2019-06-06T19:17:39.922Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[debug] [2019-06-06T19:20:08.190Z] ----------------------------------------------------------------------
+[debug] [2019-06-06T19:20:08.195Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-06T19:20:08.196Z] CLI Version:   6.8.0
+[debug] [2019-06-06T19:20:08.196Z] Platform:      linux
+[debug] [2019-06-06T19:20:08.196Z] Node Version:  v8.10.0
+[debug] [2019-06-06T19:20:08.196Z] Time:          Thu Jun 06 2019 13:20:08 GMT-0600 (MDT)
+[debug] [2019-06-06T19:20:08.196Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-06T19:20:08.212Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-06T19:20:08.212Z] > authorizing via signed-in user
+[debug] [2019-06-06T19:20:08.213Z] [iam] checking project cs260-justink for permissions ["firebase.projects.get"]
+[debug] [2019-06-06T19:20:08.216Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink:testIamPermissions  
+
+[debug] [2019-06-06T19:20:08.623Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T19:20:08.628Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink  
+ 
+[debug] [2019-06-06T19:20:08.947Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/justin/Desktop/CS260/Labs/lab4'...
+[info] 
+[warn] ⚠  functions: Cannot start emulator. Error: EACCES: permission denied, open '/home/justin/.config/configstore/@google-cloud/functions-emulator/config.json'
+You don't have access to this file.
+
+[debug] [2019-06-06T19:20:08.975Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/279101613576/clients/_:getWebAppConfig  
+ 
+[debug] [2019-06-06T19:20:09.219Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[debug] [2019-06-06T19:29:09.097Z] ----------------------------------------------------------------------
+[debug] [2019-06-06T19:29:09.102Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-06T19:29:09.102Z] CLI Version:   6.8.0
+[debug] [2019-06-06T19:29:09.103Z] Platform:      linux
+[debug] [2019-06-06T19:29:09.103Z] Node Version:  v8.10.0
+[debug] [2019-06-06T19:29:09.103Z] Time:          Thu Jun 06 2019 13:29:09 GMT-0600 (MDT)
+[debug] [2019-06-06T19:29:09.103Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-06T19:29:09.123Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-06T19:29:09.124Z] > authorizing via signed-in user
+[debug] [2019-06-06T19:29:09.124Z] [iam] checking project cs260-justink for permissions ["firebase.projects.get"]
+[debug] [2019-06-06T19:29:09.128Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink:testIamPermissions  
+
+[debug] [2019-06-06T19:29:09.540Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T19:29:09.545Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink  
+ 
+[debug] [2019-06-06T19:29:09.875Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/justin/Desktop/CS260/Labs/lab4'...
+[info] 
+[warn] ⚠  functions: Cannot start emulator. Error: EACCES: permission denied, open '/home/justin/.config/configstore/@google-cloud/functions-emulator/config.json'
+You don't have access to this file.
+
+[debug] [2019-06-06T19:29:09.930Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/279101613576/clients/_:getWebAppConfig  
+ 
+[debug] [2019-06-06T19:29:10.439Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[debug] [2019-06-06T19:35:32.100Z] ----------------------------------------------------------------------
+[debug] [2019-06-06T19:35:32.105Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-06T19:35:32.106Z] CLI Version:   6.8.0
+[debug] [2019-06-06T19:35:32.106Z] Platform:      linux
+[debug] [2019-06-06T19:35:32.106Z] Node Version:  v8.10.0
+[debug] [2019-06-06T19:35:32.106Z] Time:          Thu Jun 06 2019 13:35:32 GMT-0600 (MDT)
+[debug] [2019-06-06T19:35:32.106Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-06T19:35:32.123Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-06T19:35:32.124Z] > authorizing via signed-in user
+[debug] [2019-06-06T19:35:32.124Z] [iam] checking project cs260-justink for permissions ["firebase.projects.get"]
+[debug] [2019-06-06T19:35:32.128Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink:testIamPermissions  
+
+[debug] [2019-06-06T19:35:32.403Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T19:35:32.407Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink  
+ 
+[debug] [2019-06-06T19:35:32.735Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/justin/Desktop/CS260/Labs/lab4'...
+[info] 
+[warn] ⚠  functions: Cannot start emulator. Error: EACCES: permission denied, open '/home/justin/.config/configstore/@google-cloud/functions-emulator/config.json'
+You don't have access to this file.
+
+[debug] [2019-06-06T19:35:32.749Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/279101613576/clients/_:getWebAppConfig  
+ 
+[debug] [2019-06-06T19:35:33.032Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[debug] [2019-06-06T19:45:50.733Z] ----------------------------------------------------------------------
+[debug] [2019-06-06T19:45:50.738Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-06T19:45:50.739Z] CLI Version:   6.8.0
+[debug] [2019-06-06T19:45:50.739Z] Platform:      linux
+[debug] [2019-06-06T19:45:50.739Z] Node Version:  v8.10.0
+[debug] [2019-06-06T19:45:50.739Z] Time:          Thu Jun 06 2019 13:45:50 GMT-0600 (MDT)
+[debug] [2019-06-06T19:45:50.739Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-06T19:45:50.754Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-06T19:45:50.755Z] > authorizing via signed-in user
+[debug] [2019-06-06T19:45:50.755Z] [iam] checking project cs260-justink for permissions ["firebase.projects.get"]
+[debug] [2019-06-06T19:45:50.759Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink:testIamPermissions  
+
+[debug] [2019-06-06T19:45:51.156Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T19:45:51.160Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink  
+ 
+[debug] [2019-06-06T19:45:51.491Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/justin/Desktop/CS260/Labs/lab4'...
+[info] 
+[warn] ⚠  functions: Cannot start emulator. Error: EACCES: permission denied, open '/home/justin/.config/configstore/@google-cloud/functions-emulator/config.json'
+You don't have access to this file.
+
+[debug] [2019-06-06T19:45:51.514Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/279101613576/clients/_:getWebAppConfig  
+ 
+[debug] [2019-06-06T19:45:52.027Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[debug] [2019-06-06T19:48:01.826Z] ----------------------------------------------------------------------
+[debug] [2019-06-06T19:48:01.832Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-06T19:48:01.833Z] CLI Version:   6.8.0
+[debug] [2019-06-06T19:48:01.833Z] Platform:      linux
+[debug] [2019-06-06T19:48:01.833Z] Node Version:  v8.10.0
+[debug] [2019-06-06T19:48:01.833Z] Time:          Thu Jun 06 2019 13:48:01 GMT-0600 (MDT)
+[debug] [2019-06-06T19:48:01.833Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-06T19:48:01.850Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-06T19:48:01.850Z] > authorizing via signed-in user
+[debug] [2019-06-06T19:48:01.850Z] [iam] checking project cs260-justink for permissions ["firebase.projects.get"]
+[debug] [2019-06-06T19:48:01.854Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink:testIamPermissions  
+
+[debug] [2019-06-06T19:48:02.267Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T19:48:02.276Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink  
+ 
+[debug] [2019-06-06T19:48:02.453Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/justin/Desktop/CS260/Labs/lab4'...
+[info] 
+[warn] ⚠  functions: Cannot start emulator. Error: EACCES: permission denied, open '/home/justin/.config/configstore/@google-cloud/functions-emulator/config.json'
+You don't have access to this file.
+
+[debug] [2019-06-06T19:48:02.479Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/279101613576/clients/_:getWebAppConfig  
+ 
+[debug] [2019-06-06T19:48:03.092Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[debug] [2019-06-06T19:51:37.159Z] ----------------------------------------------------------------------
+[debug] [2019-06-06T19:51:37.164Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-06-06T19:51:37.165Z] CLI Version:   6.8.0
+[debug] [2019-06-06T19:51:37.165Z] Platform:      linux
+[debug] [2019-06-06T19:51:37.165Z] Node Version:  v8.10.0
+[debug] [2019-06-06T19:51:37.165Z] Time:          Thu Jun 06 2019 13:51:37 GMT-0600 (MDT)
+[debug] [2019-06-06T19:51:37.165Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-06T19:51:37.180Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-06T19:51:37.181Z] > authorizing via signed-in user
+[debug] [2019-06-06T19:51:37.181Z] [iam] checking project cs260-justink for permissions ["firebase.projects.get"]
+[debug] [2019-06-06T19:51:37.185Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink:testIamPermissions  
+
+[debug] [2019-06-06T19:51:37.596Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-06T19:51:37.601Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/cs260-justink  
+ 
+[debug] [2019-06-06T19:51:37.931Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/justin/Desktop/CS260/Labs/lab4'...
+[info] 
+[warn] ⚠  functions: Cannot start emulator. Error: EACCES: permission denied, open '/home/justin/.config/configstore/@google-cloud/functions-emulator/config.json'
+You don't have access to this file.
+
+[debug] [2019-06-06T19:51:37.954Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/279101613576/clients/_:getWebAppConfig  
+ 
+[debug] [2019-06-06T19:51:38.460Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
+[info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
 [info] [hosting] Rewriting /api/items to http://localhost:5001/cs260-justink/us-central1/app for local Function app
