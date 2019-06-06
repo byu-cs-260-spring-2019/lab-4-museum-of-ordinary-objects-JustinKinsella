@@ -29,7 +29,6 @@ app.post('/api/items', async (req, res) => {
         res.sendStatus(500);
       }
 });
-exports.app = functions.https.onRequest(app);
 
 //get a list of all the items in the museum.
 app.get('api/items', async (req, res) => {
@@ -40,6 +39,9 @@ app.get('api/items', async (req, res) => {
         res.sendStatus(500);
     }
 });
+
+exports.app = functions.https.onRequest(app);
+
 
 // // Create and Deploy Your First Cloud Functions
 // // https://firebase.google.com/docs/functions/write-firebase-functions

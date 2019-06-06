@@ -8,7 +8,7 @@ var app = new Vue({
       {name: 'baseball', id: 1, path: 'baseball.jpg'},
       {name: 'car', id: 2, path: 'car.jpg'},
       {name: 'glasses', id: 3, path: 'glasses.jpg'},
-      {name: 'paintbrush', id: 4, path: 'paintbrush.jpg'},
+      {name: 'brush', id: 4, path: 'brush.jpg'},
       {name: 'pen', id: 5, path: 'pen.jpg'},
       {name: 'scissors', id: 6, path: 'scissors.jpg'},
       {name: 'shovel', id: 7, path: 'shovel.jpg'},
