@@ -17,6 +17,7 @@ var app = new Vue({
     items: [],
     findTitle: "",
     findItem: null,
+    description: "",
   },
   methods: {
     selectItem(item) {
@@ -27,7 +28,8 @@ var app = new Vue({
       try {
         let result = await axios.post('/api/items', {
           title: this.title,
-          path: this.selected.path
+          path: this.selected.path,
+          description: this.description,
         });
         this.addItem = result.data;
       } catch (error) {
@@ -54,6 +56,9 @@ var app = new Vue({
         console.log(error);
       }
     },
+  },
+  created() {
+    this.getItems();
   },
   computed: {
     suggestions() {

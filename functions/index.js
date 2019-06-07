@@ -39,5 +39,27 @@ app.get('/api/items', async (req, res) => {
   }
 });
 
+//deletes the item in the list
+
+app.delete('/api/items/:id', async (req, res) => {
+  try {
+    let id = req.params.id.toString();
+    var toDelete = itemsRef.doc(id);
+    var pic = await toDelete.get();
+
+    if(!pic.exists) {
+      res.status(404).send("that item was not found");
+      return;
+    }
+    else {
+      toDelete.delete();
+      res.sendStatus(200);
+      return;
+    } 
+  }catch(error) {
+      res.status(500).send("An error occured durring deletion of image num" + id);
+  }
+});
+
 
 exports.app = functions.https.onRequest(app);
