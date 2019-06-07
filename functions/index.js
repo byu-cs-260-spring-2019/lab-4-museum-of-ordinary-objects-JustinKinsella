@@ -61,5 +61,30 @@ app.delete('/api/items/:id', async (req, res) => {
   }
 });
 
+app.put('/api/items/:id', async (req, res) => {
+  let id = req.params.id.toString();
+  var toEdit = itemsRef.doc(id);
+  
+  try {
+    var pic = await toEdit.get();
+    let item = {
+      id: toEdit.id,
+      title: req.body.title,
+      path: req.body.path,
+      description: req.body.description,
+    };
+    if(!pic.exists) {
+      res.status(404).send("That picture does not exist!");
+      return;
+    }
+    else {
+      itemsRef.doc(item.id.toString()).set(item);
+      res.send(item);
+    }
+  } catch (error) {
+    res.sendStatus(500).send("Could not edit image number " + id);
+  }
+});
+
 
 exports.app = functions.https.onRequest(app);
