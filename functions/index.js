@@ -11,12 +11,15 @@ const app = express();
 var db = firebase.firestore();
 var itemsRef = db.collection('items');
 
+
 app.post('/api/items', async (req, res) => {
   try {
     let querySnapshot = await itemsRef.get();
     let numRecords = querySnapshot.docs.length;
+    
+    console.log (querySnapshot.docs);
     let item = {
-      id: numRecords + 1,
+      id: req.body.title,
       title: req.body.title,
       path: req.body.path,
       description: req.body.description,
@@ -61,6 +64,7 @@ app.delete('/api/items/:id', async (req, res) => {
   }
 });
 
+//edit items
 app.put('/api/items/:id', async (req, res) => {
   let id = req.params.id.toString();
   var toEdit = itemsRef.doc(id);

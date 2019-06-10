@@ -19,6 +19,11 @@ var app = new Vue({
     findItem: null,
     description: "",
   },
+
+  created() {
+    this.getItems();
+  },
+
   methods: {
     selectItem(item) {
       this.findTitle = "";
@@ -28,13 +33,12 @@ var app = new Vue({
       try {
         let result = await axios.post('/api/items', {
           title: this.title,
-          path: this.selected.path,
           description: this.description,
+          path: this.selected.path,
         });
         this.addItem = result.data;
       } catch (error) {
         console.log(error);
-        console.log("Here is where I broke");
       }
     },
     async getItems() {
@@ -56,12 +60,14 @@ var app = new Vue({
         console.log(error);
       }
     },
-  },
+  
   
   async editItem(item) {
     try {
       let response = await axios.put("/api/items/" + item.id, {
         title: this.findItem.title,
+        path: this.findItem.path,
+        description: this.findItem.description,
       });
       this.findItem = null;
       this.getItems();
@@ -70,11 +76,11 @@ var app = new Vue({
       console.log(error);
     }
   },
+},
 
 
-  created() {
-    this.getItems();
-  },
+  
+
   computed: {
     suggestions() {
       return this.items.filter(item => item.title.toLowerCase().startsWith(this.findTitle.toLowerCase()));

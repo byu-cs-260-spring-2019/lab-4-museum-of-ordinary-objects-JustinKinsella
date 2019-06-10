@@ -43,7 +43,7 @@
         </div>
       </div>
       <div class="upload" v-if="findItem">
-        <input v-model="findItem.title">
+        <input v-model="findItem.title" placeholder="Edit Title">
         <textarea v-model="findItem.description"></textarea>
         <p></p>
         <img :src="findItem.path" />
